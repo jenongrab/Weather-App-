@@ -94,7 +94,7 @@ header {
     #metric-dropdown-button {
         font-size: smaller;
         color: var(--Neutral-200);
-        float: right;          
+        /* float: right;           */
     }
 
 /* stretch out to screen size so set max width; positioning is dependant on screen*/
