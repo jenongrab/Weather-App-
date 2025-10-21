@@ -18,30 +18,44 @@
 <body>
   <header>
     <img id="weather-logo" src="assets/images/logo.svg"> 
-    <select class="cards">
+    <label for="units">Units</label>
+    <select id="myDropdown" class="dropdown" name="myOption">
+      <option value="Switch to Impertial/Metric">Switch to Imperial/Metric</option>
+      <option value="temperature">Temperature</option>
+      <option value="windspeed">Wind Speed</option>
+      <option value="precipitation">Precipitation</option>
+      </select>
+
+
+    <!-- Temperature Options -->
+    <div id="temperatureOptions" class="unit-options hidden">
+      <p>Temperature</p>
+      <label><input type="radio" name="temp" value="c"> Celsius (°C)</label><br>
+      <label><input type="radio" name="temp" value="f"> Fahrenheit (°F)</label>
+    </div>
+
+    <!-- Wind Speed Options -->
+    <div id="windspeedOptions" class="unit-options hidden">
+      <p>Wind Speed</p>
+      <label><input type="radio" name="wind" value="kmh"> km/h</label><br>
+      <label><input type="radio" name="wind" value="mph"> mph</label>
+    </div>
+
+    <!-- Precipitation Options -->
+    <div id="precipitationOptions" class="unit-options hidden">
+      <p>Precipitation</p>
+      <label><input type="radio" name="precip" value="mm"> Millimeters (mm)</label><br>
+      <label><input type="radio" name="precip" value="in"> Inches (in)</label>
+    </div>
+
       
-      Units</select>
 
 
   </header>
 
 
-  Switch to Imperial/Metric
+  
 
-  Temperature
-
-  Celsius (°C)
-  Fahrenheit (°F)
-
-  Wind Speed
-
-  km/h
-  mph
-
-  Precipitation
-
-  Millimeters (mm)
-  Inches (in)
 
   <h1>How's the sky looking today?</h1>
 
