@@ -45,7 +45,7 @@
 html, body {
     font-family: 'DMSansMedium';
     font-size: 12px;
-    color: aliceblue;
+    color: var(--Neutral-0);
 
     background-color: var(--Neutral-900);
      
@@ -53,7 +53,7 @@ html, body {
 
 
 main {
-    display: flex;
+    display: flexbox;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -78,62 +78,71 @@ h1 {
 }
 
 #header {
-
+    font-size: large; 
+    color: var(--Neutral-0);
+    
 }
-
+    /* should have a fixed size...on the LHS of screen */
     #weather-logo {
+        aspect-ratio: 1/1; 
 
     }
 
-    #metric-dropdown {
-
+    #metric-dropdown-button {
+        font-size: smaller;
+        color: var(--Neutral-200);
     }
 
 /* stretch out to screen size so set max width; positioning is dependant on screen*/
 
 #search-bar {
+    background-color: var(--Neutral-600);
+    color: var(--Neutral-200);
     
 }
 
 
 #search-button  {
+    background-color: var(--Blue-500);
+    color: var(--Neutral-200);
     
 }
 
 #weather-display {
-
+    color: var(--Neutral-0);
 }
 /* 2 x 2 until stretched out to desktop size */
 
 #weather-statistics {
+    align-content: start;
 
 }
 
-
+#daily-forecast-header {
+    font-size: medium;
+}
 /* 3 x 2 until stretched out to desktop size */
 #daily-forecast {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
 
 }
 
 
 #hourly-forecast {
+    flex-direction: row;
 
 
 }
 
     #hourly-forecast-dropdown {
+        color: var(--Neutral-200)
 
     }
 
 
 
 
-main {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    height: 100vh;
-}
 
