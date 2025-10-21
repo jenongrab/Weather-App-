@@ -73,11 +73,14 @@ h1 {
     background-color: var(--Neutral-600);
     border-radius: 10px;
     align-items: center;
+    color: var(--Neutral-200);
 
     
 }
 
-#header {
+header {
+    display: flex;
+    justify-content: space-between;
     font-size: large; 
     color: var(--Neutral-0);
     
@@ -91,6 +94,7 @@ h1 {
     #metric-dropdown-button {
         font-size: smaller;
         color: var(--Neutral-200);
+        float: right;          
     }
 
 /* stretch out to screen size so set max width; positioning is dependant on screen*/
