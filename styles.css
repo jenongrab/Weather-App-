@@ -22,16 +22,16 @@
 @font-face {
     font-family: 'DMSansMedium';
     src: url('assets/fonts/DM_Sans/static/DMSans-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    /* font-weight: normal; */
+    /* font-style: normal; */
 }
 
 
 @font-face {
     font-family: 'BricolageGrotesque';
     src: url('assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    /* font-weight: normal; */
+    /* font-style: normal; */
 }
 
 
@@ -47,9 +47,85 @@ html, body {
     font-size: 12px;
     color: aliceblue;
 
-    background-color: var(--Blue-700);
+    background-color: var(--Neutral-900);
      
 }
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* responsive design for smallest screen*/
+    height: 100vh;
+
+}
+
+h1 {
+    font-family: 'DMSansMedium';
+    font-weight: 500;
+    font-size: large;
+}
+
+
+.cards {
+    background-color: var(--Neutral-600);
+    border-radius: 10px;
+    align-items: center;
+
+    
+}
+
+#header {
+
+}
+
+    #weather-logo {
+
+    }
+
+    #metric-dropdown {
+
+    }
+
+/* stretch out to screen size so set max width; positioning is dependant on screen*/
+
+#search-bar {
+    
+}
+
+
+#search-button  {
+    
+}
+
+#weather-display {
+
+}
+/* 2 x 2 until stretched out to desktop size */
+
+#weather-statistics {
+
+}
+
+
+/* 3 x 2 until stretched out to desktop size */
+#daily-forecast {
+
+}
+
+
+#hourly-forecast {
+
+
+}
+
+    #hourly-forecast-dropdown {
+
+    }
+
+
 
 
 main {
