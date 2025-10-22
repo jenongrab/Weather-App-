@@ -97,6 +97,84 @@ header {
         /* float: right;           */
     }
 
+.dropdown {
+  position: relative;
+  
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  background-color: var(--Neutral-600);
+  color: var(--Neutral-0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* align-content: center; */
+  background-color: var(--Neutral-600);
+  min-width: 100px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  border-radius: 20px;
+  /* dropdown from right instead of left */
+  right:0;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content .toggle-group :hover {
+  background-color: var(--Neutral-800);
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change background color of dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: var(--Neutral-600);
+}
+
+
+.toggle-group {
+    display: inline-flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* stretches box to the max width of the dropdown menu */
+    width: 100%;
+    height:auto;
+  }
+  
+  .toggle-group input[type="radio"] {
+    display: none; /* hide the actual radio */
+  }
+  
+  .toggle-group label {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--Neutral-600);
+    color: var(--Neutral-0);
+    user-select: none;
+    transition: all 0.2s ease;
+    /* border-right: 1px solid #ccc; */
+  }
+  
+  .toggle-group label:last-of-type {
+    border-right: none;
+  }
+  
+  .toggle-group input[type="radio"]:checked + label {
+    background-color: #007BFF;
+    color: white;
+  }
+  
 /* stretch out to screen size so set max width; positioning is dependant on screen*/
 
 #search-bar {
